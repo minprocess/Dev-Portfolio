@@ -19,11 +19,15 @@ export default function ProjectCard (props) {
   const imgStyle = {
     width: '250px',
   }
+
+  //<img src={process.env.PUBLIC_URL + '/img/logo.png'} />;
+  //src={process.env.PUBLIC_URL + `/images/${imgName}`}
+  //src={require(`/images/${imgName}`)}
   return(
     <div>
-      <div className="col s12 l4">
+      <div className="col-md-4">
         <div className="card" style={imgStyle}>
-          <img className="card-img-top" src={`/images/${imgName}`} alt={props.card.altText}/>
+          <img className="card-img-top" src={process.env.PUBLIC_URL + `/images/${imgName}`} alt={props.card.altText}/>
           <div className="card-body">
             <h4 class="card-title">{props.card.projTitle}</h4>
             <p className="card-text">{props.card.desc}</p>

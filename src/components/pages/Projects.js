@@ -146,12 +146,15 @@ var projObj = [
 
 
 // See Activity 10-Stu_Props in Unit 20-React
-
   return (
     <div>
-      {projObj.map((card) => (
-        <ProjectCard card={card} />
-      ))}
+      <div className="container">
+        <div className="row">
+
+            {projObj.map((card) => (<ProjectCard card={card} />))}
+
+        </div>
+      </div>
     </div>
   );
 }
