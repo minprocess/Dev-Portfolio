@@ -1,6 +1,9 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 
+export default function ProjectDisplay() {
+
+
 // Array of js objects with properties of my web projects so far (Jun 27 2021)
 var projObj = [
   {
@@ -143,12 +146,11 @@ var projObj = [
 
 
 // See Activity 10-Stu_Props in Unit 20-React
-export default function ProjectDisplay() {
 
   return (
     <div>
       {projObj.map((card) => (
-        <ProjectCard card />
+        <ProjectCard card={card} />
       ))}
     </div>
   );
