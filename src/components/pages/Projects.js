@@ -149,7 +149,7 @@ var projObj = [
   return (
     <div>
       <div className="container">
-        <div className="row">
+        <div className="row row-cols-3">
 
             {projObj.map((card) => (<ProjectCard card={card} />))}
 

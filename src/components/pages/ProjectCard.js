@@ -16,27 +16,27 @@ export default function ProjectCard (props) {
     imgName = props.card.imageName;
   }
 
-  const imgStyle = {
-    width: '250px',
+  const cardStyle = {
+    minHeight: '550px',
   }
 
   //<img src={process.env.PUBLIC_URL + '/img/logo.png'} />;
   //src={process.env.PUBLIC_URL + `/images/${imgName}`}
   //src={require(`/images/${imgName}`)}
   return(
-    <div>
-      <div className="col-md-4">
-        <div className="card" style={imgStyle}>
+      <div className="col">
+        <div className="card mt-2" style={cardStyle} >
           <img className="card-img-top" src={process.env.PUBLIC_URL + `/images/${imgName}`} alt={props.card.altText}/>
           <div className="card-body">
             <h4 class="card-title">{props.card.projTitle}</h4>
             <p className="card-text">{props.card.desc}</p>
             <p className="card-text"><i>Technologies</i>: {props.card.tech}</p>
           </div>
-          <a href={props.card.githubRepo} className="card-link">Code</a>
+          <div className="d-md-inline">
+          <a href={props.card.gitHubRepo} className="card-link">Code</a>
           {props.card.deployLink !== "" ? <a href={props.card.deployLink} className="card-link">Page</a> : null }
+          </div>
         </div>
       </div>
-    </div>
   );
 }
