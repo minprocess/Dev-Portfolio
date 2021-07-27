@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="container-md">
+    <div className="container-lg">
       <h3>About me</h3>
       <p>
           I am looking for full-time, part-time or freelance work as a full stack web developer. I am taking a Full Stack Web Development coding bootcamp which ends in mid-August.

@@ -37,21 +37,20 @@
   }
 }
 
-nav ul li {
-  font-size: large;
-  color: white;
+nav ul li a {
+  font-size: 28px;
+  color: white !important;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-
-nav ul {
-  font-size: large;
-  color: white;
+nav ul li {
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 nav {
-  font-size: large;
-  color: white;
-  background-color : '#27A69B'
+  background-color : #27A69B;
 }
 
 

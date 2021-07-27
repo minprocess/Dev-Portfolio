@@ -55,7 +55,7 @@ function Form() {
 
   return (
     <>
-    <div className="Container">
+    <div className="container-lg">
       <p>Hello {userName}</p>
       <form className="form">
         <input

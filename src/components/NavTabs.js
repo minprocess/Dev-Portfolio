@@ -7,13 +7,11 @@ import "../App.css";
 // <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
 //      <ul class="navbar-nav">
 
-const navStyle3 = { backgroundColor : '#e3f2fd'}
-const navStyle = { backgroundColor : '#27A69B'}
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div className="container-lg">
-    <nav className="navbar navbar-expand-lg navbar-light" >
+    <nav className="navbar navbar-expand-lg" >
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
         <li className="nav-item">
           <a
