@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 export default function ProjectDisplay() {
 

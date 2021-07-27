@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { fab } from '@fortawesome/free-brands-svg-icons'
 import './style.css';
 
 // Here we import a helper function that will check if the email is valid

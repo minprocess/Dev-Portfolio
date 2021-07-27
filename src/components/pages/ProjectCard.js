@@ -1,4 +1,5 @@
 import React from 'react';
+import { fab } from '@fortawesome/free-brands-svg-icons'
 /*
 export default function ProjectCard (props) {
   return(
