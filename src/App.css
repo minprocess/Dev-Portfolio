@@ -53,4 +53,17 @@ nav {
   background-color : #27A69B;
 }
 
+.nav-item > .active > a {
+  color: red;
+}
 
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  display: inline;
+}
+
+.iconpos {
+  size: 2em;
+}

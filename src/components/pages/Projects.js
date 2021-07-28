@@ -1,6 +1,7 @@
 import React from 'react';
+import {FaGithub} from "react-icons/fa";
+import {FaLinkedin} from "react-icons/fa";
 import ProjectCard from './ProjectCard';
-import { fab } from '@fortawesome/free-brands-svg-icons'
 
 export default function ProjectDisplay() {
 
@@ -60,7 +61,7 @@ var projObj = [
     desc: "A command-line application that allows the user to interact with a MySQL database containing three tables of employee information.",
     tech: "Node, JavaScript, console.table, Inquirer.js, MySQL2",
     altText: "Snapshot of interface to a MySQL database made with Inquirer.js"
-  },
+  },/*
   {
     projTitle: "Note Taker",
     gitHubRepo: "https://github.com/minprocess/11-Note-Taker",
@@ -141,21 +142,19 @@ var projObj = [
     desc: "Refactor a website for social media and SEO company. Used starter code.",
     tech: "HTML, CSS",
     altText: "Homepage of a website for social media and SEO company"
-  }
+  }*/
 ]
-
-
 
 // See Activity 10-Stu_Props in Unit 20-React
   return (
-    <div>
-      <div className="container-lg">
-        <div className="row row-cols-3">
-
-            {projObj.map((card) => (<ProjectCard card={card} />))}
-
-        </div>
+    <div className="container-lg">
+      <div className="row row-cols-3">
+          {projObj.map((card) => (<ProjectCard card={card} />))}
       </div>
+      <footer className="mt-auto">
+        <FaGithub/><a href="https://github.com/minprocess">https://github.com/minprocess</a>
+        <FaLinkedin/><a href="https://linkedin.com/in/bill-pate">linkedin.com/in/bill-pate</a>
+      </footer>
     </div>
   );
 }

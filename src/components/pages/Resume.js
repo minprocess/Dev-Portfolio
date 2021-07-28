@@ -1,12 +1,18 @@
 import React from 'react';
-import { fab } from '@fortawesome/free-brands-svg-icons'
+import {FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
+import {} from "react-icons/fa";
 
 export default function Resume() {
   return (
-    <div>
-      <div className="container-lg"></div>
-      <h1>Resume Page</h1>
-      <a href={'https://drive.google.com/file/d/1xWtYvc8htPDIWsXh4eu4aJK50WeHWnA1/view?usp=sharing'}>Download my resume</a>
+    <div className="container-lg">
+      <br></br>
+      <br></br>
+      <a href={'https://drive.google.com/file/d/1xWtYvc8htPDIWsXh4eu4aJK50WeHWnA1/view?usp=sharing'}><h2>Download my resume</h2></a>
+      <div className="center">
+        <span><a href="https://github.com/minprocess"><FaGithub size='2em'/></a>GitHub</span>
+        <span><a href="https://linkedin.com/in/bill-pate"><FaLinkedin size='2em' /></a>LinkedIn</span>
+        <span><a href="https://linkedin.com/in/bill-pate"><FaEnvelope size='2em'/></a>Send me a message</span>
+      </div>
     </div>
   );
 }

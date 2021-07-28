@@ -1,14 +1,4 @@
 import React from 'react';
-import { fab } from '@fortawesome/free-brands-svg-icons'
-/*
-export default function ProjectCard (props) {
-  return(
-    <div>
-      <p>{props.card.projTitle}</p>
-    </div>
-  );
-}
-*/
 
 export default function ProjectCard (props) {
 
@@ -21,9 +11,6 @@ export default function ProjectCard (props) {
     minHeight: '550px',
   }
 
-  //<img src={process.env.PUBLIC_URL + '/img/logo.png'} />;
-  //src={process.env.PUBLIC_URL + `/images/${imgName}`}
-  //src={require(`/images/${imgName}`)}
   return(
       <div className="col">
         <div className="card mt-2" style={cardStyle} >

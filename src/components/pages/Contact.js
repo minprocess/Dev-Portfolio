@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { fab } from '@fortawesome/free-brands-svg-icons'
+import {FaGithub} from "react-icons/fa";
+import {FaLinkedin} from "react-icons/fa";
 import './style.css';
 
 // Here we import a helper function that will check if the email is valid
@@ -87,6 +88,10 @@ function Form() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
+      <footer className="mt-auto">
+        <FaGithub/><a href="https://github.com/minprocess">https://github.com/minprocess</a>
+        <FaLinkedin/><a href="https://linkedin.com/in/bill-pate">linkedin.com/in/bill-pate</a>
+      </footer>
     </div>
     </>
   );
