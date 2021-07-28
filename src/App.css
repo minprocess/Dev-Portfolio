@@ -67,3 +67,7 @@ nav {
 .iconpos {
   size: 2em;
 }
+
+.link-item:active {
+  color: red;
+}

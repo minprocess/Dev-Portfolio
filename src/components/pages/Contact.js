@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import {FaGithub} from "react-icons/fa";
-import {FaLinkedin} from "react-icons/fa";
+import {FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
 import './style.css';
-
 // Here we import a helper function that will check if the email is valid
 import { checkPassword, validateEmail } from '../../utils/helpers';
+
+const spanStyle = {marginLeft: '50px'}
+const footStyle = {marginTop: '150px'}
 
 function Form() {
   // Create state variables for the fields in the form
@@ -88,10 +89,11 @@ function Form() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
-      <footer className="mt-auto">
-        <FaGithub/><a href="https://github.com/minprocess">https://github.com/minprocess</a>
-        <FaLinkedin/><a href="https://linkedin.com/in/bill-pate">linkedin.com/in/bill-pate</a>
-      </footer>
+      <div className="text-center"  style={footStyle}>
+        <span><a href="https://github.com/minprocess"><FaGithub size='40px'/></a></span>
+        <span style={spanStyle}><a href="https://linkedin.com/in/bill-pate"><FaLinkedin size='40px'/></a></span>
+        <span style={spanStyle}><a href="mailto:#"><FaEnvelope size='40px'/></a></span>
+      </div>
     </div>
     </>
   );

@@ -1,10 +1,11 @@
 import React from 'react';
-import {FaGithub} from "react-icons/fa";
-import {FaLinkedin} from "react-icons/fa";
+import {FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
 import ProjectCard from './ProjectCard';
 
 export default function ProjectDisplay() {
 
+const spanStyle = {marginLeft: '50px'}
+const footStyle = {marginTop: '150px'}
 
 // Array of js objects with properties of my web projects so far (Jun 27 2021)
 var projObj = [
@@ -61,88 +62,7 @@ var projObj = [
     desc: "A command-line application that allows the user to interact with a MySQL database containing three tables of employee information.",
     tech: "Node, JavaScript, console.table, Inquirer.js, MySQL2",
     altText: "Snapshot of interface to a MySQL database made with Inquirer.js"
-  },/*
-  {
-    projTitle: "Note Taker",
-    gitHubRepo: "https://github.com/minprocess/11-Note-Taker",
-    deployLink: "https://note-taker-wtp.herokuapp.com/",
-    imageName: "11-screen-capture-note-taker.png",
-    desc: "Web site to write and save notes. All notes are saved in one database. Used starter code",
-    tech: "HTML, CSS, Node, Javascript, Express, uuidv4",
-    altText: "Home page of Note Taker app showing list of stored notes"
   },
-  {
-    projTitle: "Team profile generator",
-    gitHubRepo: "https://github.com/minprocess/10-Team-Profile-Generator",
-    deployLink: "",
-    imageName: "10-Team-profile-screen-capture.png",
-    desc: "This app is a Node.js command-line application that a user questions about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Used starter code",
-    tech: "HTML, CSS, Node, Javascript, Inquirer.js",
-    altText: "Homepage of this app which was created after answering questions in Inquirer.js"
-  },
-  {
-    projTitle: "Readme Autogen",
-    gitHubRepo: "https://github.com/minprocess/09-Readme-Autogen",
-    deployLink: "",
-    imageName: "09-readme-autogen.png",
-    desc: "A JavaScript app uses Inquirer.js to ask a programmer a series of questions and based on that generate a readme file.",
-    tech: "Javascript, Inquirer.js",
-    altText: "Snapshot of the readme created with this app that uses Inquirer.js"
-  },
-  {
-    projTitle: "Open Road Travel Agency",
-    gitHubRepo: "https://github.com/minprocess/Open-Road-Travel-Agency",
-    deployLink: "https://minprocess.github.io/Open-Road-Travel-Agency",
-    imageName: "Open-Road-Travel-Agency.png",
-    desc: "Open Road Travel Agency website with a little bit of Covid-19 info. MVP. Group project",
-    tech: "HTML, CSS, Javascript, 3 APIs ",
-    altText: "Homepage of this travel agency app"
-  },
-  {
-    projTitle: "Simple Weather",
-    gitHubRepo: "https://github.com/minprocess/06-Simple-Weather",
-    deployLink: "https://minprocess.github.io/06-Simple-Weather",
-    imageName: "06-Simple-Weather.png",
-    desc: "Weather app with current temperature and 5 day forecast. Uses OpenWeatherMap API",
-    tech: "HTML, CSS, Javascript, jQuery, Moment.js, 1 API",
-    altText: "Homepage of this weather app"
-  },
-  {
-    projTitle: "Planner",
-    gitHubRepo:  "https://github.com/minprocess/05-Calendar",
-    deployLink: "https://minprocess.github.io/05-Calendar",
-    imageName:  "05-Calendar.png",
-    desc: "Simple daily planner. 'Events' entered by the user are kept in local storage until the next day. Used starter code.",
-    tech: "HTML, CSS, JavaScript, jQuery, Moment.js",
-    altText: "Homepage if this simple day planner type of app"
-  },
-  {
-    projTitle: "Quiz",
-    gitHubRepo: "https://github.com/minprocess/04-Quiz",
-    deployLink: "https://minprocess.github.io/04-Quiz",
-    imageName: "04-Quiz.png",
-    desc: "Quiz about JavaScript. Score is calculated from the time left on timer.",
-    tech: "HTML, CSS, JavaScript",
-    altText: "Homepage of this app which asks 5 questions about JavaScript"
-  },
-  {
-    projTitle: "Password Generator",
-    gitHubRepo: "https://github.com/minprocess/03-SecPassGen",
-    deployLink: "https://minprocess.github.io/03-SecPassGen",
-    imageName: "03-SecPassGen.png",
-    desc: "Generate a password containing random characters. Password can be customized. Used starter code",
-    tech: "HTML, CSS, JavaScript",
-    altText: "Homepage of this app which generates a random password given parameters by user"
-  },
-  {
-    projTitle: "Horiseon Refector",
-    gitHubRepo: "https://github.com/minprocess/01-Horiseon-Refactor",
-    deployLink: "https://minprocess.github.io/01-Horiseon-Refactor",
-    imageName: "01-Horiseon-Refactor.png",
-    desc: "Refactor a website for social media and SEO company. Used starter code.",
-    tech: "HTML, CSS",
-    altText: "Homepage of a website for social media and SEO company"
-  }*/
 ]
 
 // See Activity 10-Stu_Props in Unit 20-React
@@ -151,10 +71,11 @@ var projObj = [
       <div className="row row-cols-3">
           {projObj.map((card) => (<ProjectCard card={card} />))}
       </div>
-      <footer className="mt-auto">
-        <FaGithub/><a href="https://github.com/minprocess">https://github.com/minprocess</a>
-        <FaLinkedin/><a href="https://linkedin.com/in/bill-pate">linkedin.com/in/bill-pate</a>
-      </footer>
+      <div className="text-center"  style={footStyle}>
+        <span><a href="https://github.com/minprocess"><FaGithub size='40px'/></a></span>
+        <span style={spanStyle}><a href="https://linkedin.com/in/bill-pate"><FaLinkedin size='40px'/></a></span>
+        <span style={spanStyle}><a href="mailto:#"><FaEnvelope size='40px'/></a></span>
+      </div>
     </div>
   );
 }
