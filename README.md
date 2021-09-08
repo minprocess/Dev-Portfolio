@@ -8,26 +8,23 @@ GitHub Pages: https://minprocess.github.io/dev-portfolio/
 ## Installation
 The GitHub repo link is
 GitHub Repo: https://github.com/minprocess/dev-portfolio
-This app is on the gh-pages branch.
+This application is deployed to GitHub Pages. The instructions in [Create React App Docs on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages) show how to create a build that you can deploy.
 This app was created from scratch using the command
 `npx create-react-app dev-portfolio`
 Then this app was added to GitHub with these commands
 `git remote add origin git@github.com:minprocess/dev-portfolio.git`
 `git branch -M main`
-Install Bootstrap with
-`npm i bootstrap react-bootstrap`
-Install React-Icons with
-`npm i react-icons`
+
 To deploy on GitHub Pages
 `npm run deploy`
 <br>
 <br>
-GitHub pages: https://minprocess.github.io/yet-another-portfolio/
+GitHub pages: https://minprocess.github.io/dev-portfolio/
 <br>
-GitHub repo: https://github.com/minprocess/yet-another-portfolio
+GitHub repo: https://github.com/minprocess/dev-portfolio
 
 ## Usage
-![Screen capture of my portfolio page](./assets/images/yet-another-portfolio-screenshot.png)
+![Screen capture of my portfolio page](./assets/images/dev-portfolio-screenshot.png)
 <br>
 
 ## Credits

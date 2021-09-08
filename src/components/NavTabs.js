@@ -1,19 +1,16 @@
 import React from 'react';
+import { NavbarBrand } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
+
 import "../App.css";
-
-
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
-//<nav class="navbar navbar-expand-lg navbar-light bg-light">
-// <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-//      <ul class="navbar-nav">
-
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div className="container-lg">
-      <nav className="navbar navbar-expand-lg" >
-        <span className="navbar-brand">William Pate</span>
+      <Navbar bg='dark' variant='dark' expand='lg'>
+        <NavbarBrand>William Pate</NavbarBrand>
+          <Navbar.Toggle aria-controls='navbar' />
+          <Navbar.Collapse id='navbar'>
         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
           <li className="nav-item">
             <a
@@ -38,7 +35,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           <li className="nav-item">
             <a
               href="#contact"
-              onClick={() => handlePageChange('Contact')}
+              onClick={() => handlePageChange('ContactUs')}
               // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
               className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
             >
@@ -56,7 +53,8 @@ function NavTabs({ currentPage, handlePageChange }) {
             </a>
           </li>
         </ul>
-      </nav>
+        </Navbar.Collapse>
+        </Navbar>
 
     </div>
   );

@@ -10,6 +10,15 @@ const footStyle = {marginTop: '150px'}
 // Array of js objects with properties of my web projects so far (Jun 27 2021)
 var projObj = [
   {
+    projTitle: "Quizzler",
+    gitHubRepo: "https://github.com/minprocess/Quizzler",
+    deployLink: "https://quizzler-2542.herokuapp.com/",
+    imageName: "23-Quizzler-screenshot.png",
+    desc: "Application to give a French language quiz. Used starter code.",
+    tech: "apollo-server-express, graphql, express, bcrypt, dotenv, jsonwebtoken, express, mongoose, mongoose-random for the server. apollo/client, graphql, jwt-decode, react, react-dom, react-router-dom, react-scripts for the client.",
+    altText: "Home page of Quizzler app"
+  },
+  {
     projTitle: "Workout Tracker",
     gitHubRepo: "https://github.com/minprocess/18-Workout-Tracker",
     deployLink: "https://workout-tracker-2542.herokuapp.com/",
@@ -26,15 +35,6 @@ var projObj = [
     desc: "A Gist explaining a regular expression that can be used to validate a password.",
     tech: "Gist on GitHub, Markdown",
     altText: "Gist article explaining a regex for validating a password string"
-  },
-  {
-    projTitle: "Wobal - a social media site",
-    gitHubRepo: "https://github.com/minprocess/Wobal",
-    deployLink: "https://wobal-2542.herokuapp.com/",
-    imageName: "wobal-feed.png",
-    desc: "A full stack social media web site that rhymes with global. Simple, easy to use and won't sell data about you. Team project",
-    tech: "Node, bcrypt, connect-session-sequelize, dotenv, eslint, Express, express-handlebars, express-session, MySQL2, nodemon, Sequelize.js, “badwords” (a npm package)",
-    altText: "Home page of the Wobal social media app"
   },
   {
     projTitle: "Tech Blog",
@@ -69,7 +69,7 @@ var projObj = [
   return (
     <div className="container-lg">
       <div className="row row-cols-3">
-          {projObj.map((card) => (<ProjectCard card={card} />))}
+          {projObj.map((card, idx) => (<ProjectCard key={idx} card={card} />))}
       </div>
       <div className="text-center"  style={footStyle}>
         <span><a href="https://github.com/minprocess"><FaGithub size='40px'/></a></span>
