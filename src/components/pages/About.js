@@ -27,7 +27,10 @@ export default function About() {
       <div className="text-center"  style={footStyle}>
         <span><a href="https://github.com/minprocess"><FaGithub size='40px'/></a></span>
         <span style={spanStyle}><a href="https://linkedin.com/in/bill-pate"><FaLinkedin size='40px'/></a></span>
-        <span style={spanStyle}><a href="mailto:#"><FaEnvelope size='40px'/></a></span>
+        <span style={spanStyle}><a href="mailto:minprocess@outlook.com"><FaEnvelope size='40px'/></a></span>
+        <br/>
+        <br/>
+        <p>Phone: +1 719-660-2542</p>
       </div>
     </div>
   );

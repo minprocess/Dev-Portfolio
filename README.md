@@ -15,7 +15,7 @@ Then this app was added to GitHub with these commands
 `git remote add origin git@github.com:minprocess/dev-portfolio.git`
 `git branch -M main`
 
-To deploy on GitHub Pages
+To deploy on GitHub Pages<br>
 `npm run deploy`
 <br>
 <br>
@@ -24,6 +24,9 @@ GitHub pages: https://minprocess.github.io/dev-portfolio/
 GitHub repo: https://github.com/minprocess/dev-portfolio
 
 ## Usage
+To display this page on your local PC use this command<br>
+`npm start`
+
 ![Screen capture of my portfolio page](./assets/images/dev-portfolio-screenshot.png)
 <br>
 
